@@ -1,0 +1,92 @@
+body {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.container {
+    margin-top: 16px;
+}
+.minesweeper {
+    text-align: center;
+    color: rgba(229, 124, 0, 1);
+}
+
+button {
+    display: inline-block;
+    background-color: rgba(229, 124, 0, 1);
+    color: white;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid rgba(229, 124, 0, 1);
+    border-radius: 3px;
+
+}
+.button-select {
+    margin-right: 10px;
+}
+
+.game-box {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mine-box {
+    width: 306px;
+}
+
+.row {
+    margin: 3px;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cell {
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    margin-left: 3px;
+    border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 1);
+    float: left;
+    font-size: 0;
+    text-align: center;
+    cursor: default;
+    background-color: rgba(239, 179, 203, 1);
+}
+
+.cell:hover {
+    background-color: white;
+}
+
+.opened {
+    font-size: 16px;
+    background-color: white;
+}
+
+.zero {
+    font-size: 0;
+}
+
+.flag {
+    background-image: url(minesweeper_pics/flag.svg);
+    background-size: 27px;
+    font-size: 0;
+}
+
+.boom-clicked {
+    background-image: url(minesweeper_pics/cross.svg);
+    background-size: 27px;
+    font-size: 0;
+}
+
+.boom {
+    background-image: url(minesweeper_pics/boom.svg);
+    background-size: 27px;
+    font-size: 0;
+}
